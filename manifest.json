@@ -2,8 +2,8 @@
   "name": "Old Reddit Redirect",
   "description": "Ensure Reddit always loads the old design",
   "version": "1.6.1",
-  "manifest_version": 2,
-  "background": { "scripts": ["background.js"] },
+  "manifest_version": 3,
+  "background.service_worker": { "scripts": ["background.js"] },
   "icons": {
     "48": "img/icon48.png",
     "128": "img/icon128.png"
