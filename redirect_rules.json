@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "action": {
+        "type": "redirect",
+        "redirect": {
+            "regexSubstitution": "https://old.reddit"
+        }
+        },
+        "condition": {
+            "regexFilter": "^https://(www||np||amp||i)\\.reddit",
+        "resourceTypes": [
+            "main_frame"
+            ]
+        }
+    }
+]

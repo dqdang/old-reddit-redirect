@@ -3,21 +3,21 @@
   "description": "Ensure Reddit always loads the old design",
   "version": "1.6.1",
   "manifest_version": 3,
-  "background.service_worker": { "scripts": ["background.js"] },
   "icons": {
     "48": "img/icon48.png",
     "128": "img/icon128.png"
   },
-  "content_scripts": [
-    {
-      "matches": ["*://old.reddit.com/*"],
-      "css": ["styles.css"],
-      "run_at": "document_start"
-    }
-  ],
+  "declarative_net_request" : {
+    "rule_resources" : [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "redirect_rules.json"
+    }]
+  },
   "permissions": [
-    "webRequest",
-    "webRequestBlocking",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
     "*://reddit.com/*",
     "*://www.reddit.com/*",
     "*://np.reddit.com/*",
