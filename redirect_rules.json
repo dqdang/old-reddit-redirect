@@ -1,16 +1,162 @@
 [
     {
         "id": 1,
+        "priority": 2,
         "action": {
         "type": "redirect",
         "redirect": {
-            "regexSubstitution": "https://old.reddit"
+            "regexSubstitution": "old.reddit.com/comments"
         }
         },
         "condition": {
-            "regexFilter": "^https://(www||np||amp||i)\\.reddit",
+            "regexFilter": "(www||np||amp||i)\\.reddit\\.com/gallery",
         "resourceTypes": [
-            "main_frame"
+            "main_frame",
+            "sub_frame",
+            "stylesheet",
+            "script",
+            "image",
+            "object",
+            "xmlhttprequest",
+            "other"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 2,
+        "action": {
+        "type": "redirect",
+        "redirect": {
+            "regexSubstitution": "www.reddit.com/rpan"
+        }
+        },
+        "condition": {
+            "regexFilter": "(www||np||amp||i)\\.reddit\\.com/rpan",
+        "resourceTypes": [
+            "main_frame",
+            "sub_frame",
+            "stylesheet",
+            "script",
+            "image",
+            "object",
+            "xmlhttprequest",
+            "other"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 2,
+        "action": {
+        "type": "redirect",
+        "redirect": {
+            "regexSubstitution": "www.reddit.com/topics"
+        }
+        },
+        "condition": {
+            "regexFilter": "(www||np||amp||i)\\.reddit\\.com/topics",
+        "resourceTypes": [
+            "main_frame",
+            "sub_frame",
+            "stylesheet",
+            "script",
+            "image",
+            "object",
+            "xmlhttprequest",
+            "other"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "priority": 2,
+        "action": {
+        "type": "redirect",
+        "redirect": {
+            "regexSubstitution": "www.reddit.com/community-points"
+        }
+        },
+        "condition": {
+            "regexFilter": "(www||np||amp||i)\\.reddit\\.com/community-points",
+        "resourceTypes": [
+            "main_frame",
+            "sub_frame",
+            "stylesheet",
+            "script",
+            "image",
+            "object",
+            "xmlhttprequest",
+            "other"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "priority": 2,
+        "action": {
+        "type": "redirect",
+        "redirect": {
+            "regexSubstitution": "www.reddit.com/settings"
+        }
+        },
+        "condition": {
+            "regexFilter": "(www||np||amp||i)\\.reddit\\.com/settings",
+        "resourceTypes": [
+            "main_frame",
+            "sub_frame",
+            "stylesheet",
+            "script",
+            "image",
+            "object",
+            "xmlhttprequest",
+            "other"
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "priority": 2,
+        "action": {
+        "type": "redirect",
+        "redirect": {
+            "regexSubstitution": "www.reddit.com/polls"
+        }
+        },
+        "condition": {
+            "regexFilter": "(www||np||amp||i)\\.reddit\\.com/polls",
+        "resourceTypes": [
+            "main_frame",
+            "sub_frame",
+            "stylesheet",
+            "script",
+            "image",
+            "object",
+            "xmlhttprequest",
+            "other"
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "priority": 1,
+        "action": {
+        "type": "redirect",
+        "redirect": {
+            "regexSubstitution": "old.reddit.com"
+        }
+        },
+        "condition": {
+            "regexFilter": "(www||np||amp||i)\\.reddit\\.com",
+        "resourceTypes": [
+            "main_frame",
+            "sub_frame",
+            "stylesheet",
+            "script",
+            "image",
+            "object",
+            "xmlhttprequest",
+            "other"
             ]
         }
     }
