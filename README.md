@@ -1,5 +1,7 @@
 # Old Reddit Redirect
 
+[Microsoft Edge extension](https://microsoftedge.microsoft.com/addons/detail/old-reddit-redirect/bebfnbmidbcpeipkbillojfaeekadhkj)
+
 [Chrome extension](https://chrome.google.com/webstore/detail/old-reddit-redirect/dneaehbmnbhcippjikoajpoabadpodje)
 
 [Firefox extension](https://addons.mozilla.org/firefox/addon/old-reddit-redirect)
