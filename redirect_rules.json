@@ -139,6 +139,29 @@
     },
     {
         "id": 7,
+        "priority": 2,
+        "action": {
+        "type": "redirect",
+        "redirect": {
+            "regexSubstitution": "www.reddit.com/media"
+        }
+        },
+        "condition": {
+            "regexFilter": "(www||np||amp||i)\\.reddit\\.com/media",
+        "resourceTypes": [
+            "main_frame",
+            "sub_frame",
+            "stylesheet",
+            "script",
+            "image",
+            "object",
+            "xmlhttprequest",
+            "other"
+            ]
+        }
+    },
+    {
+        "id": 8,
         "priority": 1,
         "action": {
         "type": "redirect",
